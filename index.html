@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <main class="wrapper">
+      <h1>Calculator</h1>
+      <section class="calc-body">
+        <div class="row">
+          <div class="button" id="cButton">C</div>
+          <div class="button" id="display"></div>
+        </div>
+        <div class="row">
+          <div class="button numberValues" id="sevenB">7</div>
+          <div class="button numberValues" id="eightB">8</div>
+          <div class="button numberValues" id="nineB">9</div>
+          <div class="button operatorValues" id="divideB">/</div>
+        </div>
+        <div class="row">
+          <div class="button numberValues" id="fourB">4</div>
+          <div class="button numberValues" id="fiveB">5</div>
+          <div class="button numberValues" id="sixB">6</div>
+          <audio id="multiplyAudio" src="BMO_open_shop003.wav" autostart="false" ></audio>
+          <div class="button operatorValues" id="multiplyB">X</div>
+        </div>
+        <div class="row">
+          <div class="button numberValues" id="oneB">1</div>
+          <div class="button numberValues" id="twoB">2</div>
+          <div class="button numberValues" id="threeB">3</div>
+          <audio id="subtractionAudio" src="BMO_missed_coin003.wav" autostart="false" ></audio>
+          <div class="button operatorValues" id="subtractionB">-</div>
+        </div>
+        <div class="row">
+          <div class="button numberValues" id="zeroB">0</div>
+          <div class="button numberValues" id="decimalB">.</div>
+          <audio id="equalAudio" src="BMO_ProcessingData.wav" autostart="false" ></audio>
+          <div class="button" id="submitForTotalB">=</div>
+          <audio id="additionAudio" src="BMO_open_shop005.mp3" autostart="false" ></audio>
+          <div class="button operatorValues" id="additionB">+</div>
+        </div>
+      </section>
+    </main>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
