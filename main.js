@@ -17,16 +17,8 @@ let buttonAddition= document.getElementById("additionB");
 let buttonPeriod= document.getElementById("decimalB");
 let buttonEquals= document.getElementById("submitForTotalB");
 
-let displayLimit = 18;
 
 // This should prevent too much info on the screen
-
-// This area is just for fun.
-let audioEquals= document.getElementById("equalAudio")
-let audioSubtraction= document.getElementById("subtractionAudio")
-let audioAddition= document.getElementById("additionAudio")
-let audioMultiply= document.getElementById("multiplyAudio")
-
 
 // // This will be the button function area of Javascript
 // -------0--------
@@ -119,12 +111,6 @@ function callEquals(){
 //
 //
 //This area is just for fun.
-//
-// How to create an on click sound.
-// Don't forget to place audio tag in HTML
-// function playSound() {
-//           var sound = document.getElementById("audio");
-//           sound.play();
 
 buttonEquals.addEventListener("click", callEqualsAudio);
 function callEqualsAudio(){
@@ -147,5 +133,17 @@ function callAdditionAudio(){
 buttonMultiply.addEventListener("click", callMultiplyAudio);
 function callMultiplyAudio(){
   let sound = document.getElementById("multiplyAudio")
+  sound.play();
+}
+
+buttonClear.addEventListener("click", callClearAudio);
+function callClearAudio(){
+  let sound = document.getElementById("clearAudio")
+  sound.play();
+}
+
+buttonDivide.addEventListener("click", callDivideAudio);
+function callDivideAudio(){
+  let sound = document.getElementById("divideAudio")
   sound.play();
 }
